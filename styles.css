@@ -6,10 +6,13 @@
 }
 
 body {
-    font-family: Arial, sans-serif; /* A fallback, we'll set specific fonts later */
+    /* Changed font-family to Inter for better readability, with Arial as fallback */
+    font-family: 'Inter', Arial, sans-serif;
     display: flex; /* Use flexbox for the main container */
     min-height: 100vh; /* Make body take at least full viewport height */
     background-color: #f0f0f0; /* Light background for the overall page */
+    line-height: 1.6; /* Improve line spacing for readability */
+    color: #333; /* Slightly darker default text color */
 }
 
 /* Main Container Layout */
@@ -30,7 +33,7 @@ body {
     justify-content: flex-end; /* Push content (photo credit) to the bottom */
     align-items: center; /* Center content horizontally */
     color: white; /* Text color for elements on the image */
-    padding: 10px; /* Add some padding */
+    padding: 20px; /* Add some padding */
 }
 
 .photo-credit {
@@ -42,6 +45,11 @@ body {
 .photo-credit a {
     color: white;
     text-decoration: underline;
+    transition: color 0.2s ease; /* Smooth transition for link color */
+}
+
+.photo-credit a:hover {
+    color: #c0c0c0; /* Slightly lighter on hover */
 }
 
 /* Form Content Styling */
@@ -67,7 +75,6 @@ body {
 
 .form-section {
     background-color: #ffffff; /* Explicitly white for form section */
-    /* Enhanced box-shadow for more depth */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Stronger, but still subtle shadow */
     padding: 30px;
     border-radius: 8px; /* Slightly rounded corners */
@@ -94,7 +101,8 @@ body {
     font-size: 0.8rem;
     color: #444;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 5px; /* Space between label and input */
+    letter-spacing: 0.05em; /* Slightly increased letter spacing for labels */
 }
 
 .input-group input {
@@ -103,8 +111,13 @@ body {
     padding: 10px 12px;
     font-size: 1rem;
     outline: none; /* Remove default outline */
-    /* Add transition for smooth border and shadow changes */
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Placeholder styling */
+.input-group input::placeholder {
+    color: #a0a0a0; /* Lighter color for placeholder */
+    font-style: italic; /* Italicize placeholder text */
 }
 
 /* Input Pseudo-classes (as per instructions) */
@@ -129,7 +142,6 @@ button[type="submit"] {
     border-radius: 8px;
     cursor: pointer;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-    /* Add transition for background-color and box-shadow */
     transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.1s ease;
     margin-top: 20px; /* Space above button */
 }
@@ -140,8 +152,7 @@ button[type="submit"]:hover {
 }
 
 button[type="submit"]:active {
-    /* Subtle press effect when clicked */
-    transform: translateY(2px);
+    transform: translateY(2px); /* Subtle press effect when clicked */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -155,9 +166,10 @@ button[type="submit"]:active {
     color: #596D48; /* Same green as button */
     font-weight: bold;
     text-decoration: none;
-    transition: text-decoration 0.2s ease; /* Smooth underline transition */
+    transition: color 0.2s ease, text-decoration 0.2s ease; /* Smooth transition for color and underline */
 }
 
 .login-section a:hover {
     text-decoration: underline;
+    color: #4A5B3D; /* Slightly darker green on hover */
 }
