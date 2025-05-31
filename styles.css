@@ -64,3 +64,63 @@ body {
     color: white;
     text-decoration: underline;
 }
+
+/* Form Content Styling */
+.form-content {
+    width: 60%; /* The remaining width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    padding: 50px 80px; /* Generous padding */
+    background-color: #ffffff; /* White background for the form side */
+    gap: 30px; /* Space between sections */
+}
+
+.text-section p {
+    font-size: 1.25rem; /* Larger text for intro */
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.text-section p:last-of-type {
+    margin-bottom: 0;
+}
+
+.form-section {
+    background-color: #ffffff; /* Explicitly white for form section */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 30px;
+    border-radius: 8px; /* Slightly rounded corners */
+}
+
+.form-section h2 {
+    font-size: 1.7rem;
+    margin-bottom: 25px;
+}
+
+.form-row {
+    display: flex;
+    gap: 50px; /* Space between input groups in a row */
+    margin-bottom: 20px; /* Space between rows */
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Allows input groups to take equal space */
+}
+
+.input-group label {
+    font-size: 0.8rem;
+    color: #444;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    border: 1px solid #E5E7EB; /* Light border for inputs */
+    border-radius: 4px;
+    padding: 10px 12px;
+    font-size: 1rem;
+    outline: none; /* Remove default outline */
+}
