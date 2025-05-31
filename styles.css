@@ -124,3 +124,13 @@ body {
     font-size: 1rem;
     outline: none; /* Remove default outline */
 }
+
+/* Input Pseudo-classes (as per instructions) */
+.input-group input:focus {
+    border-color: #3B82F6; /* Blue border on focus */
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2); /* Subtle blue shadow */
+}
+
+.input-group input:invalid {
+    border-color: #EF4444; /* Red border for invalid inputs */
+}
