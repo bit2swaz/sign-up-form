@@ -4,3 +4,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: Arial, sans-serif; /* A fallback, we'll set specific fonts later */
+    display: flex; /* Use flexbox for the main container */
+    min-height: 100vh; /* Make body take at least full viewport height */
+    background-color: #f0f0f0; /* Light background for the overall page */
+}
+
