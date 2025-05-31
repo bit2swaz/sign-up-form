@@ -12,3 +12,8 @@ body {
     background-color: #f0f0f0; /* Light background for the overall page */
 }
 
+/* Main Container Layout */
+.container {
+    display: flex; /* Flexbox for the two main columns */
+    width: 100%;
+}
