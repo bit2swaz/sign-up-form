@@ -1,4 +1,3 @@
-/* Basic Resets and Body Styling */
 * {
     margin: 0;
     padding: 0;
@@ -6,71 +5,67 @@
 }
 
 body {
-    /* Changed font-family to Inter for better readability, with Arial as fallback */
     font-family: 'Inter', Arial, sans-serif;
-    display: flex; /* Use flexbox for the main container */
-    min-height: 100vh; /* Make body take at least full viewport height */
-    background-color: #f0f0f0; /* Light background for the overall page */
-    line-height: 1.6; /* Improve line spacing for readability */
-    color: #333; /* Slightly darker default text color */
+    display: flex;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+    color: #333;
 }
 
-/* Main Container Layout */
 .container {
-    display: flex; /* Flexbox for the two main columns */
+    display: flex;
     width: 100%;
 }
 
-/* Image Sidebar Styling */
 .image-sidebar {
-    position: relative; /* Needed for positioning the photo credit */
-    width: 40%; /* Adjust as needed, approx. 40% based on design */
-    background-image: url('./assets/fern.jpg'); /* Your downloaded image */
-    background-size: cover; /* Cover the entire area */
-    background-position: center; /* Center the image */
+    position: relative;
+    width: 40%;
+    background-image: url('./assets/fern.jpg');
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; /* Push content (photo credit) to the bottom */
-    align-items: center; /* Center content horizontally */
-    color: white; /* Text color for elements on the image */
-    padding: 20px; /* Add some padding */
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    padding: 20px;
 }
 
 .photo-credit {
     font-size: 0.8rem;
-    margin-bottom: 10px; /* Space from the bottom */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Ensure text is readable against the background */
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
 .photo-credit a {
     color: white;
     text-decoration: underline;
-    transition: color 0.2s ease; /* Smooth transition for link color */
+    transition: color 0.2s ease;
 }
 
 .photo-credit a:hover {
-    color: #c0c0c0; /* Slightly lighter on hover */
+    color: #c0c0c0;
 }
 
-/* Form Content Styling */
 .form-content {
-    width: 60%; /* The remaining width */
+    width: 60%;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center content vertically */
-    padding: 50px 80px; /* Generous padding */
-    background-color: #ffffff; /* White background for the form side */
-    gap: 30px; /* Space between sections */
+    justify-content: center;
+    padding: 50px 80px;
+    background-color: #ffffff;
+    gap: 30px;
 }
 
 .text-section {
-    padding-bottom: 25px; /* Add padding at the bottom */
-    border-bottom: 1px solid #e0e0e0; /* Subtle separator line */
-    margin-bottom: 25px; /* Space below the line */
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 25px;
 }
 
 .text-section p {
-    font-size: 1.25rem; /* Larger text for intro */
+    font-size: 1.25rem;
     font-weight: 500;
     margin-bottom: 20px;
 }
@@ -79,23 +74,21 @@ body {
     margin-bottom: 0;
 }
 
-/* Enhanced styling for <b> and <em> tags */
 .text-section b {
-    font-weight: 700; /* Ensure strong bolding */
-    color: #222; /* Make bold text slightly darker for emphasis */
+    font-weight: 700;
+    color: #222;
 }
 
 .text-section em {
     font-style: italic;
-    color: #555; /* Make italic text slightly darker for emphasis */
+    color: #555;
 }
 
-
 .form-section {
-    background-color: #ffffff; /* Explicitly white for form section */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Stronger, but still subtle shadow */
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
     padding: 30px;
-    border-radius: 8px; /* Slightly rounded corners */
+    border-radius: 8px;
 }
 
 .form-section h2 {
@@ -105,59 +98,53 @@ body {
 
 .form-row {
     display: flex;
-    gap: 50px; /* Space between input groups in a row */
-    margin-bottom: 20px; /* Space between rows */
+    gap: 50px;
+    margin-bottom: 20px;
 }
 
 .input-group {
     display: flex;
     flex-direction: column;
-    flex: 1; /* Allows input groups to take equal space */
+    flex: 1;
 }
 
 .input-group label {
     font-size: 0.8rem;
     color: #444;
     font-weight: bold;
-    margin-bottom: 5px; /* Space between label and input */
-    letter-spacing: 0.05em; /* Slightly increased letter spacing for labels */
+    margin-bottom: 5px;
+    letter-spacing: 0.05em;
 }
 
 .input-group input {
-    border: 1px solid #E5E7EB; /* Light border for inputs */
+    border: 1px solid #E5E7EB;
     border-radius: 4px;
     padding: 10px 12px;
     font-size: 1rem;
-    outline: none; /* Remove default outline */
-    /* Add transition for smooth border and shadow changes */
+    outline: none;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Placeholder styling */
 .input-group input::placeholder {
-    color: #a0a0a0; /* Lighter color for placeholder */
-    font-style: italic; /* Italicize placeholder text */
+    color: #a0a0a0;
+    font-style: italic;
 }
 
-/* Input Pseudo-classes (as per instructions) */
 .input-group input:focus {
-    border-color: #3B82F6; /* Blue border on focus */
-    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3); /* Slightly more pronounced blue shadow */
+    border-color: #3B82F6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
 }
 
 .input-group input:invalid {
-    border-color: #EF4444; /* Red border for invalid inputs */
+    border-color: #EF4444;
 }
 
-/* New: Subtle box-shadow on input hover */
-.input-group input:hover:not(:focus) { /* Apply only if not focused */
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Very light shadow on hover */
+.input-group input:hover:not(:focus) {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-
-/* Submit Button */
 button[type="submit"] {
-    background-color: #596D48; /* Specific green color */
+    background-color: #596D48;
     color: white;
     font-size: 1.2rem;
     font-weight: bold;
@@ -167,33 +154,32 @@ button[type="submit"] {
     cursor: pointer;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
     transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.1s ease;
-    margin-top: 20px; /* Space above button */
+    margin-top: 20px;
 }
 
 button[type="submit"]:hover {
-    background-color: #4A5B3D; /* Slightly darker green on hover */
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* More pronounced shadow on hover */
+    background-color: #4A5B3D;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 button[type="submit"]:active {
-    transform: translateY(2px); /* Subtle press effect when clicked */
+    transform: translateY(2px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Login Section */
 .login-section {
     font-size: 1.1rem;
     margin-top: 20px;
 }
 
 .login-section a {
-    color: #596D48; /* Same green as button */
+    color: #596D48;
     font-weight: bold;
     text-decoration: none;
-    transition: color 0.2s ease, text-decoration 0.2s ease; /* Smooth transition for color and underline */
+    transition: color 0.2s ease, text-decoration 0.2s ease;
 }
 
 .login-section a:hover {
     text-decoration: underline;
-    color: #4A5B3D; /* Slightly darker green on hover */
+    color: #4A5B3D;
 }
