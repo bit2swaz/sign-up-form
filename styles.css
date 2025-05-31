@@ -63,6 +63,12 @@ body {
     gap: 30px; /* Space between sections */
 }
 
+.text-section {
+    padding-bottom: 25px; /* Add padding at the bottom */
+    border-bottom: 1px solid #e0e0e0; /* Subtle separator line */
+    margin-bottom: 25px; /* Space below the line */
+}
+
 .text-section p {
     font-size: 1.25rem; /* Larger text for intro */
     font-weight: 500;
@@ -72,6 +78,18 @@ body {
 .text-section p:last-of-type {
     margin-bottom: 0;
 }
+
+/* Enhanced styling for <b> and <em> tags */
+.text-section b {
+    font-weight: 700; /* Ensure strong bolding */
+    color: #222; /* Make bold text slightly darker for emphasis */
+}
+
+.text-section em {
+    font-style: italic;
+    color: #555; /* Make italic text slightly darker for emphasis */
+}
+
 
 .form-section {
     background-color: #ffffff; /* Explicitly white for form section */
@@ -111,6 +129,7 @@ body {
     padding: 10px 12px;
     font-size: 1rem;
     outline: none; /* Remove default outline */
+    /* Add transition for smooth border and shadow changes */
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -128,6 +147,11 @@ body {
 
 .input-group input:invalid {
     border-color: #EF4444; /* Red border for invalid inputs */
+}
+
+/* New: Subtle box-shadow on input hover */
+.input-group input:hover:not(:focus) { /* Apply only if not focused */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Very light shadow on hover */
 }
 
 
