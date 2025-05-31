@@ -17,3 +17,50 @@ body {
     display: flex; /* Flexbox for the two main columns */
     width: 100%;
 }
+
+/* Image Sidebar Styling */
+.image-sidebar {
+    position: relative; /* Needed for positioning the logo overlay and credit */
+    width: 40%; /* Adjust as needed, approx. 40% based on design */
+    background-image: url('./assets/background-fern.jpg'); /* Your downloaded image */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Puts logo at top, credit at bottom */
+    align-items: center; /* Center content horizontally */
+    color: white; /* Text color for elements on the image */
+    padding: 20px; /* Add some padding */
+}
+
+.logo-overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    width: 100%; /* Take full width of sidebar */
+    padding: 15px 0; /* Vertical padding for the logo */
+    display: flex;
+    justify-content: center; /* Center logo and text */
+    align-items: center; /* Align items vertically */
+    margin-top: 15vh; /* Push logo down from top, based on design sample */
+}
+
+.logo-overlay img {
+    height: 90px; /* Adjust size of Odin logo */
+    margin-right: 15px; /* Space between logo and text */
+}
+
+.logo-overlay h1 {
+    font-family: 'Skranji', cursive; /* Apply the Norse font */
+    font-size: 5rem; /* Large font size for the logo text */
+    font-weight: bold;
+    color: white;
+}
+
+.photo-credit {
+    font-size: 0.8rem;
+    margin-bottom: 10px; /* Space from the bottom */
+}
+
+.photo-credit a {
+    color: white;
+    text-decoration: underline;
+}
