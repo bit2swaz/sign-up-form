@@ -134,3 +134,22 @@ body {
 .input-group input:invalid {
     border-color: #EF4444; /* Red border for invalid inputs */
 }
+
+/* Submit Button */
+button[type="submit"] {
+    background-color: #596D48; /* Specific green color */
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s ease; /* Smooth transition */
+    margin-top: 20px; /* Space above button */
+}
+
+button[type="submit"]:hover {
+    background-color: #4A5B3D; /* Slightly darker green on hover */
+}
